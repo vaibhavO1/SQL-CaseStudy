@@ -46,7 +46,7 @@ SET Weight = REPLACE(Weight,'kg','');
 SELECT * FROM laptop_backup
 WHERE Weight IS NULL; 
 
--- ALTER TABLE laptop_backup MODIFY COLUMN Weight DECIMAL (10,2);
+ALTER TABLE laptop_backup MODIFY COLUMN Weight DECIMAL (6,3);
 
 UPDATE laptop_backup
 SET Price = ROUND(Price);
